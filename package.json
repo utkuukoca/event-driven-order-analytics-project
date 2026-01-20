@@ -1,0 +1,26 @@
+{
+  "name": "event-driven-order-analytics",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simple event-driven order processing system using NestJS, Kafka, Redis, and MongoDB.",
+  "scripts": {
+    "start:api": "ts-node services/api/src/main.ts",
+    "start:consumer": "ts-node services/consumer/src/main.ts",
+    "start:analytics": "ts-node services/analytics/src/main.ts"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.3.3",
+    "@nestjs/core": "^10.3.3",
+    "@nestjs/platform-express": "^10.4.22",
+    "ioredis": "^5.4.1",
+    "kafkajs": "^2.2.4",
+    "mongoose": "^8.5.2",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
